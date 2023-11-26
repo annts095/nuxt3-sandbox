@@ -73,3 +73,42 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Deploy
+### serverlessを使用してデプロイ (lambda)
+
+1. setting aws credentials
+
+~/.aws/credentialsに認証情報を設定
+
+```sh
+vi ~/.aws/credentials`
+```
+
+```vi
+[default]
+aws_access_key_id=XXXXXXX
+aws_secret_access_key=XXXXXXXX
+region=ap-northeast-1
+```
+
+2. ビルド
+
+```sh
+yarn build
+```
+を実行
+
+3. デプロイ
+
+```sh
+yarn deploy:serverless
+```
+
+を実行
+
+4. ページへアクセス
+
+2が完了後にコンソールに表示されるURLにアクセス (AWS上のコンソールにも記載されている)
+https://xxxxxxxxxxxxx.lambda-url.ap-northeast-1.on.aws/
+
