@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   // 1. CSR
     devtools: { enabled: true },
     ssr: false,
-
+    spaLoadingTemplate: true, 
   // 2. Serverless on lambda
   /*
   nitro: {
