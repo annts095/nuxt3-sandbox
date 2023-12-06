@@ -77,7 +77,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ## Deploy
 ### serverlessを使用してデプロイ (lambda)
 
-1. setting aws credentials
+#### 　1. setting aws credentials
 
 ~/.aws/credentialsに認証情報を設定
 
@@ -92,14 +92,14 @@ aws_secret_access_key=XXXXXXXX
 region=ap-northeast-1
 ```
 
-2. ビルド
+#### 2. ビルド
 
 ```sh
 yarn build
 ```
 を実行
 
-3. デプロイ
+#### 3. デプロイ
 
 ```sh
 yarn deploy:serverless
@@ -107,7 +107,7 @@ yarn deploy:serverless
 
 を実行
 
-4. ページへアクセス
+#### 4. ページへアクセス
 
 2が完了後にコンソールに表示されるURLにアクセス (AWS上のコンソールにも記載されている)
 https://xxxxxxxxxxxxx.lambda-url.ap-northeast-1.on.aws/
